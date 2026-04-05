@@ -1,15 +1,5 @@
 # BitAdapt — Mixed-Precision MIMO Precoder on FPGA
 
-ELE6310E — Efficient HW Implementation of Deep Neural Networks  
-Polytechnique Montréal, Winter 2026  
-Authors: Glodi Salambamba, Jean-Claude Junior Raymond
-
-## Structure
-- `code/Pipeline/` — Training pipeline (main_FPGA.py, eval_delayed_scale.py, generate_hls_project.py)
-- `code/quan/` — LSQ quantization modules  
-- `hls_projects/` — Generated Vitis HLS C++ (Delayed Scaling architecture)
-- `hls_analysis/` — Hardware analysis JSON (bit-widths, energy estimates)
-- `checkpoints/` — FP32 pretrained models (medium_fpga, small_fpga)
 
 ## Key Results (medium_fpga, stecath dataset, Xilinx Alveo U280)
 | Configuration | SR (bps/Hz) | LUT | DSP | BRAM |
