@@ -1,13 +1,5 @@
 # BitAdapt — Mixed-Precision MIMO Precoder on FPGA
 
-
-## Key Results (medium_fpga, stecath dataset, Xilinx Alveo U280)
-| Configuration | SR (bps/Hz) | LUT | DSP | BRAM |
-|---|---|---|---|---|
-| FP32 reference | 24.52 | — | — | — |
-| BitAdapt λ=5 (SW) | 23.06 | — | — | — |
-| BitAdapt λ=5 (HLS) | 21.07 | 7% | 1% | 11% |
-
 ## Reproduce
 ```bash
 conda env create -f environment.yml
