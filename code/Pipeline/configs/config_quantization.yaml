@@ -1,0 +1,35 @@
+name: BitAdapt
+lr_bit: 0.001
+lambda_reg: 1.0
+fp32_model_path: ""
+output_dir: "/export/tmp/sala/bitadapt_result"
+quan: false          # bool — overridden by CLI --quan
+epochs: 120          # overridden by CLI --epochs
+
+device:
+  type: gpu
+  gpu: [0]
+
+log:
+  print_freq: 1000
+
+dataloader:
+  dataset: custom
+  batch_size: 1000
+  workers: 4
+
+# FIX 1: renamed from quan to quan_cfg
+quan_cfg:
+  act:
+    mode: lsq
+    bit: 8
+    per_channel: true
+    symmetric: false
+    all_positive: false
+  weight:
+    mode: lsq
+    bit: 8
+    per_channel: true
+    symmetric: false
+    all_positive: false
+  excepts: {}

@@ -1,0 +1,35 @@
+# base_config.yaml
+name: BitAdapt
+run_quantization: false    # RENAMED: this is the phase flag (bool)
+lambda_reg: 1.0
+lr_bit: 0.0002
+fp32_model_path: ""
+output_dir: "/export/tmp/sala/bitadapt_result"
+epochs: 120
+
+device:
+  type: gpu
+  gpu: [0]
+
+log:
+  print_freq: 1000
+
+dataloader:
+  dataset: custom
+  batch_size: 1000
+  workers: 4
+
+quan:                        # KEPT: this is the quantizer config object
+  act:
+    mode: lsq
+    bit: 8
+    per_channel: true
+    symmetric: false
+    all_positive: false
+  weight:
+    mode: lsq
+    bit: 8
+    per_channel: true
+    symmetric: false
+    all_positive: false
+  excepts: {}
