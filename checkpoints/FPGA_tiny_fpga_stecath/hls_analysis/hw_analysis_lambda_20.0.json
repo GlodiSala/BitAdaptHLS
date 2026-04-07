@@ -1,0 +1,155 @@
+{
+  "sr_fp32_ref": 23.08940417289734,
+  "en_8bit_ref_uJ": 0.2696872552886248,
+  "sr_best": 18.044792003631592,
+  "en_best_uJ": 0.007543369908192954,
+  "sr_degradation_pct": 21.85,
+  "en_reduction_pct": 97.2,
+  "bit_widths": {
+    "embedding": {
+      "weight": 1,
+      "activation": 2
+    },
+    "layers.0.attention": {
+      "weight": 1,
+      "activation": 2
+    },
+    "layers.0.feed_forward.0": {
+      "weight": 1,
+      "activation": 2
+    },
+    "layers.0.feed_forward.3": {
+      "weight": 1,
+      "activation": 2
+    },
+    "layers.1.attention": {
+      "weight": 1,
+      "activation": 2
+    },
+    "layers.1.feed_forward.0": {
+      "weight": 1,
+      "activation": 2
+    },
+    "layers.1.feed_forward.3": {
+      "weight": 1,
+      "activation": 2
+    },
+    "layers.2.attention": {
+      "weight": 1,
+      "activation": 2
+    },
+    "layers.2.feed_forward.0": {
+      "weight": 1,
+      "activation": 2
+    },
+    "layers.2.feed_forward.3": {
+      "weight": 1,
+      "activation": 2
+    },
+    "layers.3.attention": {
+      "weight": 1,
+      "activation": 2
+    },
+    "layers.3.feed_forward.0": {
+      "weight": 1,
+      "activation": 2
+    },
+    "layers.3.feed_forward.3": {
+      "weight": 1,
+      "activation": 2
+    },
+    "output": {
+      "weight": 1,
+      "activation": 3
+    }
+  },
+  "param_counts": {
+    "embedding": 8256,
+    "layers.0.attention.out_proj": 4160,
+    "layers.0.feed_forward.0": 33280,
+    "layers.0.feed_forward.3": 32832,
+    "layers.1.attention.out_proj": 4160,
+    "layers.1.feed_forward.0": 33280,
+    "layers.1.feed_forward.3": 32832,
+    "layers.2.attention.out_proj": 4160,
+    "layers.2.feed_forward.0": 33280,
+    "layers.2.feed_forward.3": 32832,
+    "layers.3.attention.out_proj": 4160,
+    "layers.3.feed_forward.0": 33280,
+    "layers.3.feed_forward.3": 32832,
+    "output": 8320
+  },
+  "total_params": 297664,
+  "hls_summary": {
+    "embedding": {
+      "weight_format": "ap_int<1>",
+      "act_format": "ap_int<2>",
+      "note": "Delayed Scaling: acc_int * s_w * s_act + bias"
+    },
+    "layers.0.attention": {
+      "weight_format": "ap_int<1>",
+      "act_format": "ap_int<2>",
+      "note": "Delayed Scaling: acc_int * s_w * s_act + bias"
+    },
+    "layers.0.feed_forward.0": {
+      "weight_format": "ap_int<1>",
+      "act_format": "ap_int<2>",
+      "note": "Delayed Scaling: acc_int * s_w * s_act + bias"
+    },
+    "layers.0.feed_forward.3": {
+      "weight_format": "ap_int<1>",
+      "act_format": "ap_int<2>",
+      "note": "Delayed Scaling: acc_int * s_w * s_act + bias"
+    },
+    "layers.1.attention": {
+      "weight_format": "ap_int<1>",
+      "act_format": "ap_int<2>",
+      "note": "Delayed Scaling: acc_int * s_w * s_act + bias"
+    },
+    "layers.1.feed_forward.0": {
+      "weight_format": "ap_int<1>",
+      "act_format": "ap_int<2>",
+      "note": "Delayed Scaling: acc_int * s_w * s_act + bias"
+    },
+    "layers.1.feed_forward.3": {
+      "weight_format": "ap_int<1>",
+      "act_format": "ap_int<2>",
+      "note": "Delayed Scaling: acc_int * s_w * s_act + bias"
+    },
+    "layers.2.attention": {
+      "weight_format": "ap_int<1>",
+      "act_format": "ap_int<2>",
+      "note": "Delayed Scaling: acc_int * s_w * s_act + bias"
+    },
+    "layers.2.feed_forward.0": {
+      "weight_format": "ap_int<1>",
+      "act_format": "ap_int<2>",
+      "note": "Delayed Scaling: acc_int * s_w * s_act + bias"
+    },
+    "layers.2.feed_forward.3": {
+      "weight_format": "ap_int<1>",
+      "act_format": "ap_int<2>",
+      "note": "Delayed Scaling: acc_int * s_w * s_act + bias"
+    },
+    "layers.3.attention": {
+      "weight_format": "ap_int<1>",
+      "act_format": "ap_int<2>",
+      "note": "Delayed Scaling: acc_int * s_w * s_act + bias"
+    },
+    "layers.3.feed_forward.0": {
+      "weight_format": "ap_int<1>",
+      "act_format": "ap_int<2>",
+      "note": "Delayed Scaling: acc_int * s_w * s_act + bias"
+    },
+    "layers.3.feed_forward.3": {
+      "weight_format": "ap_int<1>",
+      "act_format": "ap_int<2>",
+      "note": "Delayed Scaling: acc_int * s_w * s_act + bias"
+    },
+    "output": {
+      "weight_format": "ap_int<1>",
+      "act_format": "ap_int<3>",
+      "note": "Delayed Scaling: acc_int * s_w * s_act + bias"
+    }
+  }
+}

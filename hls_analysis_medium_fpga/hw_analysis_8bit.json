@@ -1,0 +1,60 @@
+{
+  "bit_widths": {
+    "embedding": {
+      "weight": 8,
+      "activation": 8
+    },
+    "layers.0.attention": {
+      "weight": 8,
+      "activation": 8
+    },
+    "layers.0.feed_forward.0": {
+      "weight": 8,
+      "activation": 8
+    },
+    "layers.0.feed_forward.3": {
+      "weight": 8,
+      "activation": 8
+    },
+    "layers.1.attention": {
+      "weight": 8,
+      "activation": 8
+    },
+    "layers.1.feed_forward.0": {
+      "weight": 8,
+      "activation": 8
+    },
+    "layers.1.feed_forward.3": {
+      "weight": 8,
+      "activation": 8
+    },
+    "layers.2.attention": {
+      "weight": 8,
+      "activation": 8
+    },
+    "layers.2.feed_forward.0": {
+      "weight": 8,
+      "activation": 8
+    },
+    "layers.2.feed_forward.3": {
+      "weight": 8,
+      "activation": 8
+    },
+    "layers.3.attention": {
+      "weight": 8,
+      "activation": 8
+    },
+    "layers.3.feed_forward.0": {
+      "weight": 8,
+      "activation": 8
+    },
+    "layers.3.feed_forward.3": {
+      "weight": 8,
+      "activation": 8
+    },
+    "output": {
+      "weight": 8,
+      "activation": 8
+    }
+  }
+}
